@@ -1,7 +1,7 @@
 .login_container {
 	width: 100%;
 	min-height: 100vh;
-	background-color: #f5f5f5;
+	background-color: black;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -22,7 +22,8 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: white;
+	background-color: black;
+	color: white;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 }
@@ -49,7 +50,7 @@
 	font-size: 14px;
 }
 
-.error_msg {
+.error_msg,.success_msg {
 	width: 370px;
 	padding: 15px;
 	margin: 5px 0;
@@ -59,14 +60,17 @@
 	border-radius: 5px;
 	text-align: center;
 }
-
+.success_msg{
+	background-color: #5cdd5c;
+}
 .right {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #3bb19b;
+	background-color: black;
+	color: white;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }

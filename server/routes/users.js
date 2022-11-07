@@ -52,5 +52,7 @@ router.get('/:id/verify/:token', async (req, res) => {
 		console.log(error);
 		res.status(500).send({ message: "Internal Server Error" });
 	}
-})
+});
+
+
 module.exports = router;

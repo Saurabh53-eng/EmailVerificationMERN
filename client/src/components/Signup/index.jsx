@@ -42,7 +42,7 @@ const Signup = () => {
 					<h1>Welcome Back</h1>
 					<Link to="/login">
 						<button type="button" className={styles.white_btn}>
-							Sing in
+							Sign in
 						</button>
 					</Link>
 				</div>
@@ -53,6 +53,7 @@ const Signup = () => {
 							type="text"
 							placeholder="First Name"
 							name="firstName"
+							autoComplete="on"
 							onChange={handleChange}
 							value={data.firstName}
 							required
@@ -62,6 +63,7 @@ const Signup = () => {
 							type="text"
 							placeholder="Last Name"
 							name="lastName"
+							autoComplete="on"
 							onChange={handleChange}
 							value={data.lastName}
 							required
@@ -71,6 +73,7 @@ const Signup = () => {
 							type="email"
 							placeholder="Email"
 							name="email"
+							autoComplete="on"
 							onChange={handleChange}
 							value={data.email}
 							required
@@ -80,6 +83,7 @@ const Signup = () => {
 							type="password"
 							placeholder="Password"
 							name="password"
+							autoComplete="on"
 							onChange={handleChange}
 							value={data.password}
 							required
@@ -89,7 +93,7 @@ const Signup = () => {
 						{msg && <div className={styles.success_msg}>{msg}</div>}
 
 						<button type="submit" className={styles.green_btn}>
-							Sing Up
+							Sign Up
 						</button>
 					</form>
 				</div>
